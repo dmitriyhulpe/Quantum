@@ -1,0 +1,154 @@
+.main__filter {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    box-shadow: rgba(100, 100, 110, 0.25) 0px 5px 30px 0px;
+    padding: 0 30px;
+}
+
+.filter__category {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 20px 0;
+    color: #808080;
+    position: relative;
+}
+
+.filter__category:not(:last-child) {
+    margin-right: 30px;
+}
+
+.filter__category:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 3px;
+    background: $Blue;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+}
+
+.filter__category.active {
+    font-weight: bold;
+    color: $Blue;
+}
+
+.filter__category.active:after {
+    opacity: 1;
+}
+
+.main__products {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    @media(max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 480px) {
+        grid-template-columns: auto;
+    }
+}
+
+.products__card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 110, 0.25) 0px 5px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__image img {
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+.card__title {
+    color: #666;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px
+}
+
+.card__title h2 {
+    font-size: inherit;
+    display: inline-block;
+}
+
+.card__price {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.card__price span {
+    font-weight: bold;
+    color: #666;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.card__price i {
+    color: #808080;
+    font-size: 16px;
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.card__price i:hover {
+    color: $Black;
+    opacity: 1;
+}
+
+.card__rating {
+    display: flex;
+    transform: rotateY(180deg);
+}
+
+.card__rating input {
+    display: none;
+}
+
+.card__rating label {
+    display: block;
+    cursor: pointer;
+    width: 18px;
+    position: relative;
+}
+
+.card__rating label:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.card__rating label::before {
+    content: '\f005';
+    font-family: $Awesome;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    color: #101010;
+    font-weight: 300;
+}
+
+.card__rating label::after {
+    content: '\f005';
+    font-family: $Awesome;
+    position: absolute;
+    display: block;
+    font-size: 18px;
+    color: #1f9cff;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.card__rating label:hover,
+.card__rating label:hover::after,
+.card__rating input:checked ~ label::after {
+    opacity: 1;
+}

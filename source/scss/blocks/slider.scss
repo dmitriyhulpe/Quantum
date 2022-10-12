@@ -1,0 +1,31 @@
+.main__slider {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.slider__image {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.main__slider .swiper-button-prev::after,
+.main__slider .swiper-button-next::after {
+    color: #fff;
+    font-size: 25px;
+}
+
+.main__slider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: $Blue;
+}
+
+@media(max-width: 576px) {
+    .main__slider .swiper-button-prev,
+    .main__slider .swiper-button-next {
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}

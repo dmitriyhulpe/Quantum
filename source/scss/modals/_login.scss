@@ -1,0 +1,104 @@
+#login .modal {
+    min-width: 350px;
+}
+
+@media (max-width: 567px)
+{
+    #login .modal
+    {
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+.form__input
+{
+    height: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form__input
+{
+    position: relative;
+}
+
+.form__input input
+{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 0.25rem solid #f5f5f5;
+}
+
+.form__input input:focus ~ label,
+.form__input input:valid ~ label
+{
+    transform: translateY(-20px);
+    font-size: 10px;
+    color: $Blue;
+    left: 0;
+    bottom: 15px;
+}
+
+.form__input label
+{
+    font-size: 12px;
+    position: absolute;
+    pointer-events: none;
+    bottom: 1rem;
+    left: 1rem;
+    color: #808080;
+    transition: all 0.25s ease;
+}
+
+.form__input .underline
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.25rem;
+    width: 100%;
+}
+
+.form__input .underline::before
+{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: $Blue;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.form__input input:focus ~ .underline::before,
+.form__input input:valid ~ .underline::before
+{
+    transform: scaleX(1);
+}
+
+.form__button
+{
+    width: 100%;
+    background: $Black;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.form__button:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.form__button:hover
+{
+    background: $Blue;
+}
+
+.form__button.close:hover
+{
+    background: $Red;
+}

@@ -1,0 +1,12 @@
+#registration .modal {
+    min-width: 350px;
+}
+
+@media (max-width: 567px)
+{
+    #registration .modal
+    {
+        min-width: 100%;
+        width: 100%;
+    }
+}

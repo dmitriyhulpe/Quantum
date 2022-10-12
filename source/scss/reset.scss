@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after
+{
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+img
+{
+	display: block;
+	max-width: 100%;
+}
+
+ul,
+li
+{
+	list-style: none;
+}
+
+input,
+button,
+textarea,
+select
+{
+	font: inherit;
+	outline: none;
+}

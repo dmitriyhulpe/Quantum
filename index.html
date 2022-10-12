@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/style.min.css">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
+	<title>Quantum</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<h1 class="header__logo">Quantum</h1>
+				<form class="header__search">
+					<input class="header__input" type="text" placeholder="Search">
+					<div class="header__category">
+						<select name="Category">
+							<option value="Computers">Computers</option>
+							<option value="Laptops">Laptops</option>
+							<option value="Smartphones">Smartphones</option>
+							<option value="Watches">Watches</option>
+							<option value="Smartphones">Keyboards</option>
+							<option value="Smartphones">Mouses</option>
+							<option value="Smartphones">Consoles</option>
+						</select>
+					</div>
+					<button class="header__button button" type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+				<div class="header__storage">
+					<div class="header__cart header__item">
+						<i class="fad fa-shopping-cart"></i>
+						<span data-modal="cart">Empty Cart</span>
+					</div>
+					<div class="header__wishlist header__item">
+						<i class="fas fa-heart"></i>
+						<span data-modal="wishlist">Wish List</span>
+					</div>
+					<div class="header__login header__item">
+						<i class="fad fa-user"></i>
+						<span data-modal="login">Sign in</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__footer">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__burger">
+						<i class="fas fa-bars"></i>
+						<span>All Categories</span>
+					</div>
+					<nav class="header__navigation">
+						<a href="#">Super Deals</a>
+						<a href="#">Featured Brands</a>
+						<a href="#">Collections</a>
+						<a href="#">Bestselling</a>
+					</nav>
+					<div class="header__info">
+						<div class="header__currency header__select">
+							<select name="Currency">
+								<option value="Dollar">USD</option>
+								<option value="Euro">EUR</option>
+								<option value="Zloty">PLN</option>
+							</select>
+						</div>
+						<div class="header__language header__select">
+							<select name="Language">
+								<option value="English">English</option>
+								<option value="Deutsch">Deutsch</option>
+								<option value="Polish">Polska</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<main class="main">
+			<div class="container">
+				<div class="main__slider swiper-container">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+						  <div class="swiper-slide">
+								<img class="slider__image" src="source/images/slider/appleone.webp" alt="#">
+						  </div>
+						  <div class="swiper-slide">
+								<img class="slider__image" src="source/images/slider/appletwo.webp" alt="#">
+						  </div>
+						  <div class="swiper-slide">
+								<img class="slider__image" src="source/images/slider/applethree.webp" alt="#">
+						  </div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					  </div>
+				</div>
+				<div class="main__featured">
+					<div class="featured__item featured__column">
+						<a class="featured__title" href="#"><h2>Lorem Ipsum Dolor Sit Amet</h2></a>
+						<span class="featured__subtitle">Nesciunt Modi</span>
+						<div class="featured__image">
+							<img src="source/images/goods/iphone.png" alt="#">
+						</div>
+					</div>
+					<div class="featured__item featured__column">
+						<a class="featured__title" href="#"><h2>Lorem Ipsum Dolor Sit Amet</h2></a>
+						<span class="featured__subtitle">Nesciunt Modi</span>
+						<div class="featured__image">
+							<img src="source/images/goods/iphone.png" alt="#">
+						</div>
+					</div>
+					<div class="featured__item featured__row">
+						<div class="featured__image">
+							<img src="source/images/goods/airpods.png" alt="#">
+						</div>
+						<a class="featured__title" href="#"><h2>Lorem Ipsum Dolor Sit Amet</h2></a>
+					</div>
+					<div class="featured__item featured__row">
+						<div class="featured__image">
+							<img src="source/images/goods/airpods.png" alt="#">
+						</div>
+						<a class="featured__title" href="#"><h2>Lorem Ipsum Dolor Sit Amet</h2></a>
+					</div>
+				</div>
+				<div class="main__wrapper">
+					<sidebar class="main__sidebar sidebar">
+						<div class="sidebar__categories">
+							<div class="sidebar__item">
+								<span><i class="fad fa-desktop"></i>Computers</span>
+								<i class="fas fa-angle-right"></i>
+							</div>
+							<div class="sidebar__item">
+								<span><i class="fad fa-laptop"></i>Laptops</span>
+								<i class="fas fa-angle-right"></i>
+							</div>
+							<div class="sidebar__item">
+								<span><i class="fad fa-mobile"></i>Smartphones</span>
+								<i class="fas fa-angle-right"></i>
+							</div>
+							<div class="sidebar__item">
+								<span><i class="fad fa-watch-fitness"></i>Watches</span>
+								<i class="fas fa-angle-right"></i>
+							</div>
+							<div class="sidebar__item">
+								<span><i class="fad fa-keyboard"></i>Keyboards</span>
+								<i class="fas fa-angle-right"></i>
+							</div>
+							<div class="sidebar__item">
+								<span><i class="fas fa-mouse"></i>Mouses</span>
+								<i class="fas fa-angle-right"></i>
+							</div>
+							<div class="sidebar__item">	
+								<span><i class="fas fa-gamepad-alt"></i>Consoles</span>
+								<i class="fas fa-angle-right"></i>
+							</div>
+						</div>
+						<div class="sidebar__advertising">
+							<h2 class="advertising__title">Lorem Ipsum Sit Amet</h2>
+							<span class="advertising__subtitle">Lorem Ipsum</span>
+						</div>
+					</sidebar>
+					<div class="main__catalog">
+						<div class="main__filter">
+							<div class="filter__category active">
+								<p>Most Popular</p>
+							</div>
+							<div class="filter__category">
+								<p>My Communities</p>
+							</div>
+						</div>
+						<div class="main__products">
+							<div class="products__card">
+								<div class="card__image">
+									<img src="source/images/goods/iphone.png" alt="#">
+								</div>
+								<a href="#" class="card__title"><h2>Lorem Ipsum</h2></a>
+								<div class="card__rating">
+									<input type="radio" name="star" id="star-one"><label for="star-one"></label>
+									<input type="radio" name="star" id="star-two"><label for="star-two"></label>
+									<input type="radio" name="star" id="star-three"><label for="star-three"></label>
+									<input type="radio" name="star" id="star-four"><label for="star-four"></label>
+									<input type="radio" name="star" id="star-five"><label for="star-five"></label>
+								</div>
+								<div class="card__price">
+									<span>380$</span>
+									<i class="fas fa-shopping-cart"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+				<div class="footer__body">
+					<div class="container">
+						<h1 class="footer__logo">Quantum</h1>
+						<nav class="footer__navigation">
+							<a href="#">Shop</a>
+							<a href="#">Journal</a>
+							<a href="#">About</a>
+							<a href="#">Contacts</a>
+						</nav>
+						<div class="footer__social">
+							<i class="fab fa-facebook-f"></i>
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-youtube"></i>
+						</div>
+					</div>
+				</div>
+				<div class="footer__inner">
+					<div class="container">
+						<div class="footer__copyright">
+							<a href="#">2020 Copyright</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Terms of Use</a>
+						</div>
+						<div class="footer__payment">
+							<p>Accepted payment methods</p>
+							<i class="fab fa-cc-visa"></i>
+							<i class="fab fa-cc-mastercard"></i>
+							<i class="fab fa-cc-paypal"></i>
+							<i class="fab fa-cc-apple-pay"></i>
+						</div>
+					</div>
+				</div>
+		</footer>
+	</div>
+	<div class="overlay" id="login">
+		<div class="modal">
+			<div class="modal__underline"></div>
+			<div class="modal__title">
+				<h3>Sign In</h3>
+			</div>
+			<form class="modal__form" action="#" method="#">
+				<div class="form__input">
+					<input class="email required" type="text" required name="email">
+					<span class="underline"></span>
+					<label>Email</label>
+				</div>
+				<div class="form__input">
+					<input class="password required" type="password" required name="password">
+					<span class="underline"></span>
+					<label>Password</label>
+				</div>
+				<button class="form__button button" type="submit">Sign in</button>
+				<button class="form__button button" type="submit" data-modal="registration">Registration</button>
+				<button class="form__button close button">Close</button>
+			</form>
+		</div>
+	</div>
+	<div class="overlay" id="registration">
+		<div class="modal">
+			<div class="modal__underline"></div>
+			<div class="modal__title">
+				<h3>Registration</h3>
+			</div>
+			<form class="modal__form" action="#" method="#">
+				<div class="form__input">
+					<input class="name required" type="text" required name="name">
+					<span class="underline"></span>
+					<label>Name</label>
+				</div>
+				<div class="form__input">
+					<input class="email required" type="text" required name="email">
+					<span class="underline"></span>
+					<label>Email</label>
+				</div>
+				<div class="form__input">
+					<input class="password required" type="password" required name="password">
+					<span class="underline"></span>
+					<label>Password</label>
+				</div>
+				<button class="form__button button" type="submit">Registration</button>
+				<button class="form__button close button">Close</button>
+			</form>
+		</div>
+	</div>
+	<div class="overlay" id="cart">
+		<div class="modal">
+			<div class="modal__underline"></div>
+			<div class="modal__title">
+				<h3>Cart is empty</h3>
+			</div>
+			<p>There is nothing here yet</p>
+		</div>
+	</div>
+	<div class="overlay" id="wishlist">
+		<div class="modal">
+			<div class="modal__underline"></div>
+			<div class="modal__title">
+				<h3>Wishlist is empty</h3>
+			</div>
+			<p>There is nothing here yet</p>
+		</div>
+	</div>
+	<script src="source/js/font.awesome.min.js"></script>
+	<script src="source/js/swiper.min.js"></script>
+	<script src="source/js/select.js"></script>
+	<script src="dist/js/script.min.js"></script>
+</body>
+</html>

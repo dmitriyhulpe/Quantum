@@ -1,0 +1,15 @@
+.main__wrapper {
+    display: grid;
+    grid-template-columns: 340px auto;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    @media(max-width: 996px) {
+        grid-template-columns: auto;
+    }
+}
+
+.main__sidebar {
+    @media(max-width: 996px) {
+        display: none;
+    }
+}
